@@ -1,77 +1,141 @@
-# Ayesha Summaiyya — Portfolio
+# ❄️ Ayesha Summaiyya — Interactive Portfolio
 
-A playful cartoon snowy village portfolio built with **Next.js 14**, **Tailwind CSS**, and **Framer Motion**.
+An immersive **portfolio-as-a-world experience** where users explore a snowy village to discover projects, resume, and contact — guided by an animated penguin 🐧
 
-## 🚀 Quick Start
+---
 
-```bash
-# 1. Install dependencies
-npm install
+## 🌐 Live Demo
 
-# 2. Start the dev server
-npm run dev
-```
+👉 https://portfolio-clean-sigma.vercel.app/
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+---
 
-## 🏗️ Build for Production
+## ✨ Overview
 
-```bash
-npm run build
-npm start
-```
+This portfolio reimagines the traditional personal website as an **interactive environment** instead of a static page.
+
+Users navigate through a **cartoon-style snowy village**, where each building represents a section:
+
+* Projects
+* Resume
+* Contact
+* About Me
+
+A character-driven interaction (penguin) enhances engagement and creates a unique user journey.
+
+---
+
+## 🔥 Why This Portfolio Stands Out
+
+* 🎮 Game-like navigation instead of scrolling
+* 🐧 Character-based interaction system
+* 🎨 Fully custom SVG UI (no templates used)
+* ⚡ Smooth animations with Framer Motion
+* 🧩 Clean and scalable component architecture
+* 💡 Focus on **UX storytelling + creativity**
+
+---
+
+## 🎮 Interactions
+
+| Action                     | Result                                    |
+| -------------------------- | ----------------------------------------- |
+| Click **Projects (Igloo)** | Penguin walks left → Opens Projects panel |
+| Click **Resume (Shop)**    | Penguin moves to center → Opens Resume    |
+| Click **Contact (Booth)**  | Penguin walks right → Opens Contact       |
+| Click **Penguin**          | Opens About Me instantly                  |
+| Hover buildings            | Scale + glow animation                    |
+| Press **Escape**           | Close active panel                        |
+
+---
+
+## 🏗️ Tech Stack
+
+* **Next.js 14** — App Router architecture
+* **Tailwind CSS** — Utility-first styling
+* **Framer Motion** — Smooth animations
+* **TypeScript** — Type safety & scalability
+* **Google Fonts (Nunito)** — Clean typography
+
+---
 
 ## 📁 Project Structure
 
 ```
 ayesha-portfolio/
 ├── app/
-│   ├── layout.tsx        # Root layout + metadata
-│   ├── page.tsx          # Root page (state orchestration)
-│   └── globals.css       # Tailwind + custom animations
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
 │
 ├── components/
-│   ├── Scene.tsx         # Full village world (sky, mountains, ground, buildings, penguin)
-│   ├── Building.tsx      # Clickable building wrapper (hover + click)
-│   ├── IglooSVG.tsx      # "Projects" — illustrated igloo
-│   ├── ShopSVG.tsx       # "Resume"   — illustrated shop building
-│   ├── BoothSVG.tsx      # "Contact"  — illustrated booth
-│   ├── Penguin.tsx       # Walking penguin with Framer Motion animation
-│   ├── PenguinSVG.tsx    # Penguin SVG illustration
-│   ├── Snowflakes.tsx    # Falling snowflake particles
-│   ├── Overlay.tsx       # Animated modal panel
-│   ├── PanelContent.tsx  # Content for About / Projects / Resume / Contact
-│   └── data.ts           # All portfolio content (projects, skills, metadata)
+│   ├── Scene.tsx
+│   ├── Building.tsx
+│   ├── IglooSVG.tsx
+│   ├── ShopSVG.tsx
+│   ├── BoothSVG.tsx
+│   ├── Penguin.tsx
+│   ├── PenguinSVG.tsx
+│   ├── Snowflakes.tsx
+│   ├── Overlay.tsx
+│   ├── PanelContent.tsx
+│   └── data.ts
 │
-├── public/               # Static assets
+├── public/
 ├── package.json
 ├── tailwind.config.js
 ├── tsconfig.json
 └── next.config.js
 ```
 
-## 🎮 Interactions
+---
 
-| Action | Result |
-|--------|--------|
-| Click **PROJECTS igloo** | Penguin walks left → opens Projects panel |
-| Click **RESUME shop** | Penguin walks to center → opens Resume panel |
-| Click **CONTACT booth** | Penguin walks right → opens Contact panel |
-| Click **Penguin** | Opens About Me panel instantly |
-| **Hover** any building | Scale up + glow effect |
-| Press **Escape** | Close open panel |
+## ⚡ Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open → http://localhost:3000
+
+---
+
+## 🚀 Production Build
+
+```bash
+npm run build
+npm start
+```
+
+---
 
 ## ✏️ Customisation
 
-- **Content**: Edit `components/data.ts` — projects, skills, certs.
-- **Building art**: Edit `IglooSVG.tsx`, `ShopSVG.tsx`, `BoothSVG.tsx` (plain SVG).
-- **Colours / animations**: `app/globals.css` + Tailwind classes.
-- **Penguin walk speed**: Adjust `duration` formula in `components/Penguin.tsx`.
+* **Content:** `components/data.ts`
+* **UI & Animations:** `app/globals.css`
+* **Illustrations:** SVG files in `/components`
+* **Character Logic:** `Penguin.tsx`
 
-## 🛠️ Tech Stack
+---
 
-- [Next.js 14](https://nextjs.org) — App Router
-- [Tailwind CSS](https://tailwindcss.com)
-- [Framer Motion](https://www.framer.com/motion)
-- [TypeScript](https://www.typescriptlang.org)
-- Google Fonts — Nunito
+## 💡 Key Highlights
+
+* Unique **portfolio-as-an-experience** concept
+* Smooth character-driven navigation
+* Clean separation of UI, logic, and data
+* Modern frontend architecture using Next.js
+* Focus on both **design + engineering quality**
+
+---
+
+## 📬 Contact
+
+Feel free to connect for collaborations, internships, or opportunities.
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
+

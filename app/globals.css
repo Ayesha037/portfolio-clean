@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #__next {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #c8e8f8;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-thumb { background: #a8d8f0; border-radius: 2px; }
+
+/* ── Penguin idle bob ── */
+@keyframes penguinBob {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  25%       { transform: translateY(-4px) rotate(-2deg); }
+  75%       { transform: translateY(-2px) rotate(2deg); }
+}
+.penguin-idle { animation: penguinBob 2.8s ease-in-out infinite; }
+
+/* ── Snowflake fall ── */
+@keyframes snowflakeFall {
+  0%   { transform: translateY(-10px) rotate(0deg); opacity: 0; }
+  15%  { opacity: 1; }
+  100% { transform: translateY(70vh) rotate(360deg); opacity: 0; }
+}
+.snowflake { animation: snowflakeFall linear forwards; pointer-events: none; }
+
+/* ── Building hover glow ── */
+.building-wrap:hover svg {
+  filter: drop-shadow(0 0 12px rgba(80, 160, 255, 0.55));
+}
+
+/* ── Panel slide-in ── */
+@keyframes panelIn {
+  from { opacity: 0; transform: scale(0.9) translateY(24px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+.panel-enter { animation: panelIn 0.4s cubic-bezier(0.34, 1.4, 0.64, 1) forwards; }
+
+/* ── Sun ray spin ── */
+@keyframes sunSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.sun-rays { animation: sunSpin 18s linear infinite; transform-origin: center; }
+
+/* ── Tree sway ── */
+@keyframes treeSway {
+  0%, 100% { transform: rotate(-2deg); transform-origin: bottom center; }
+  50%       { transform: rotate(2deg); transform-origin: bottom center; }
+}
+.tree-sway   { animation: treeSway 4s ease-in-out infinite; }
+.tree-sway-r { animation: treeSway 5.5s ease-in-out infinite reverse; }
+
+/* ── Road mark scroll ── */
+@keyframes roadScroll { from { transform: translateY(0); } to { transform: translateY(28px); } }
+.road-marks { animation: roadScroll 1s linear infinite; }
